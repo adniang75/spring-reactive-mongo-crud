@@ -9,6 +9,10 @@ public class AppUtils {
 
     private static final ModelMapper modelMapper = new ModelMapper();
 
+    private AppUtils() {
+
+    }
+
     public static ProductDto entityToDto(Product product) {
         modelMapper
                 .getConfiguration()
